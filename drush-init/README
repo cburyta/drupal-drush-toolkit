@@ -1,0 +1,39 @@
+This was originally taken directly from http://drupal.org/node/793174,
+ala - KarenS [http://drupal.org/user/45874]
+
+I'll probably tweak it to fit my needs, but it was the perfect start to what I was looking for.
+
+
+Purpose
+=======
+
+Install drush / drush_make under the user for an SSH account.
+
+Quick usage
+===========
+
+### Create a drush-init.sh locally
+
+    cd ~
+    vi drush-init.sh
+
+Then paste the drush-init.sh script into that file.
+
+### Make the script executable
+
+    chmod +x drupal-init.sh
+
+### Run the script
+
+    ./drush-init.sh
+
+### Remove files and make sure the script ran ok
+
+    rm drush-init.sh
+    ls -la ~/.drush
+
+### Use drush
+
+    drush
+
+Thats it! You should see the commands (including drush_make) when you run just "drush" at the command line.
